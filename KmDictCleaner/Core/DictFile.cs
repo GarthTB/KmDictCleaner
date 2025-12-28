@@ -18,14 +18,14 @@ internal static class DictFile
                     return "";
                 Interlocked.Add(ref pre, parts.Length - 1);
                 var code = parts[0];
-                List<string> words = new(parts.Length - 1);
+                List<string> words = new(parts.Length - 1) { code };
                 foreach (var word in parts.AsSpan(1))
                     if (checks.All(check => check(code, word)))
                         words.Add(word);
-                if (words.Count == 0)
+                if (words.Count < 2)
                     return "";
-                Interlocked.Add(ref post, words.Count);
-                return string.Join(' ', code, words);
+                Interlocked.Add(ref post, words.Count - 1);
+                return string.Join(' ', words);
             })
             .Where(static line => !string.IsNullOrEmpty(line));
         File.WriteAllLines(GenOutPath(inPath), result);
