@@ -7,9 +7,12 @@
         <Nullable>enable</Nullable>
         <PublishAot>true</PublishAot>
         <InvariantGlobalization>true</InvariantGlobalization>
-        <ApplicationIcon>icon.ico</ApplicationIcon>
-        <Company>Garth TB &lt;g-art-h@outlook.com&gt;</Company>
         <Product>Kongming Dict Cleaner</Product>
+        <ApplicationIcon>icon.ico</ApplicationIcon>
+        <Authors>Garth TB &lt;g-art-h@outlook.com&gt;</Authors>
+        <Company>Garth TB &lt;g-art-h@outlook.com&gt;</Company>
+        <PackageProjectUrl>https://github.com/GarthTB/KmDictCleaner</PackageProjectUrl>
+        <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
     </PropertyGroup>
 
 </Project>
