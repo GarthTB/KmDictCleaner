@@ -7,12 +7,12 @@
 ## 📥 用法
 
 1. 配置C#环境，下载源码
-2. 修改`Program.cs`：在`DictFile.Proc`函数中，填入词库路径和用于查错的Lambda表达式数组
+2. 修改`Program.cs`：向`Proc`方法填入词库路径和用于查错的表达式，作为参数
 3. 运行程序，清理后的词库文件将自动输出到相同目录中
 
 ### 查错方法
 
-`FaultCheck`类中提供了一系列查错方法，可根据条件选择：
+`Checker`类中提供了一系列查错方法，可根据条件选择：
 
 | 方法名    | 依据   | 示例条件                   | 示例写法                                   |
 |--------|------|------------------------|----------------------------------------|
@@ -26,18 +26,19 @@
 | Pair12 | 2字组合 | "石头"2字中，'石'字前2码不能为"Dk" | Pair12(code, word, '石', '头', 'D', 'k') |
 | Pair34 | 2字组合 | "石头"2字中，'头'字前2码不能为"to" | Pair34(code, word, '石', '头', 't', 'o') |
 
-## 🛠 技术栈
+## ℹ 关于
 
-- **框架**：.NET 10.0
-- **语言**：C# 14.0
-
-## 📜 开源信息
-
-- **作者**：GarthTB | 天卜 <g-art-h@outlook.com>
-- **许可证**：[MIT 许可证](https://mit-license.org/)
-- **项目地址**：https://github.com/GarthTB/KmDictCleaner
+- 地址：https://github.com/GarthTB/KmDictCleaner
+- 技术：.NET 10.0/C# 14.0
+- 协议：[MIT 许可证](https://mit-license.org/)
+- 作者：Garth TB | 天卜 <g-art-h@outlook.com>
+- 版权：Copyright (c) 2025 - 2026 Garth TB | 天卜
 
 ## 📝 更新日志
+
+### v1.1.0 (20260409)
+
+- 简化项目结构
 
 ### v1.0.0 (20251229)
 

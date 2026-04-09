@@ -7,12 +7,11 @@
         <Nullable>enable</Nullable>
         <PublishAot>true</PublishAot>
         <InvariantGlobalization>true</InvariantGlobalization>
-        <Product>Kongming Dict Cleaner</Product>
-        <ApplicationIcon>icon.ico</ApplicationIcon>
-        <Authors>Garth TB &lt;g-art-h@outlook.com&gt;</Authors>
-        <Company>Garth TB &lt;g-art-h@outlook.com&gt;</Company>
+        <Version>1.1.0</Version>
         <PackageProjectUrl>https://github.com/GarthTB/KmDictCleaner</PackageProjectUrl>
-        <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
+        <Authors>Garth TB | 天卜 &lt;g-art-h@outlook.com&gt;</Authors>
+        <Copyright>Copyright (c) 2025 - 2026 Garth TB | 天卜</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
 </Project>

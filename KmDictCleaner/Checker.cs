@@ -1,8 +1,6 @@
-namespace KmDictCleaner.Core;
+namespace KmDictCleaner;
 
-/// <summary> 检查编码错误 </summary>
-internal static class FaultCheck
-{
+internal static class Checker {
     /// <summary> 某字的首码出错，检查该词库条目是否涉及 </summary>
     /// <param name="code"> 编码 </param>
     /// <param name="word"> 字词 </param>
